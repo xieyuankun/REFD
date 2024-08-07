@@ -19,7 +19,7 @@ def init():
                         default='19eval', choices=["LA", "DF", "19dev", "19laaugdev", "19lapaaugdev",
                                                    "19dfaugdev", "19dfpaaugdev", "19eval"])
     parser.add_argument("--gpu", type=str, help="GPU index", default="1")
-    parser.add_argument("--ood_detector_name", type=str, default="knn",
+    parser.add_argument("--ood_detector_name", type=str, default="NSD",
                         choices=['energy', 'nnguide', 'msp', 'maxlogit', 'vim', 'ssd', 'mahalanobis', 
                                  'NSD', 'kl', 'knn', 'relation'])
     args = parser.parse_args()

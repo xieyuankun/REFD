@@ -49,7 +49,7 @@ python ood_detector_pre.py
 ```
 
 ### 3. OOD Score Calculation
-Select a score-based OOD detector in the arg ¡°ood_detector_name¡± parameter for OOD score calculation. 
+Select a score-based OOD detector in the arg "ood_detector_name" for OOD score calculation. 
 
 OOD scores are saved in `./ood_step/result_oodscore.pt`.
 

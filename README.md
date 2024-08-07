@@ -40,7 +40,7 @@ python main_train.py
 ```
 
 ### 2. Preprocessing for OOD Detection
-Training and testing features are saved in `./ood_step/traindict.pt` and `./ood_step/evaldict.pt`, respectively, for subsequent OOD score calculations.
+The feature, logits, label of training and testing datasets are saved in `./ood_step/traindict.pt` and `./ood_step/evaldict.pt`, respectively, for subsequent OOD score calculations.
 
 FD test scores are stored in `/result/result_FD.txt`.
 

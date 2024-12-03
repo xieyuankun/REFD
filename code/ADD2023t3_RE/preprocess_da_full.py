@@ -71,8 +71,8 @@ def add_noise(audio, noisecat, numnoise, noiselist, noisesnr):
         noise_db = 10 * numpy.log10(numpy.mean(noiseaudio ** 2) + 1e-4)
         noisesnr = random.uniform(noisesnr[noisecat][0], noisesnr[noisecat][1])
         noises.append(numpy.sqrt(10 ** ((clean_db - noise_db - noisesnr) / 10)) * noiseaudio)
-        noise = numpy.sum(numpy.concatenate(noises, axis=0), axis=0, keepdims=True)
-        return noise + audio
+    noise = numpy.sum(numpy.concatenate(noises, axis=0), axis=0, keepdims=True)
+    return noise + audio
 
 
 train_num = 19197
